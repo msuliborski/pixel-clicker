@@ -1,0 +1,584 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/screens_and_upgrades_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/pixel_image" >
+
+        <LinearLayout
+            android:id="@+id/upgrades_and_buildings"
+            android:layout_width="fill_parent"
+            android:layout_height="696dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/save_image"
+                android:layout_width="180dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-3dp"
+                android:layout_weight="1"
+                android:onClick="save_clicked"
+                android:src="@drawable/save" />
+
+            <LinearLayout
+                android:id="@+id/upgrades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:baselineAligned="true"
+                android:paddingBottom="10dp"
+                android:scrollbarAlwaysDrawVerticalTrack="false" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/tap_x2_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:onClick="tap_x2_clicked"
+                        android:src="@drawable/tap_x2" />
+
+                    <TextView
+                        android:id="@+id/tap_x2_price_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="P: 100"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tap_x2_amount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="A: 0"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/pps_up_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:onClick="pps_up_clicked"
+                        android:src="@drawable/pps_up" />
+
+                    <TextView
+                        android:id="@+id/pps_up_price_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="P: 100"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/pps_up_amount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="A: 0"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/coursor_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:onClick="coursor_clicked"
+                android:src="@drawable/coursor" />
+
+            <TextView
+                android:id="@+id/coursor_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="-5dp"
+                android:layout_weight="1"
+                android:text="Price: 15"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/coursor_amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Amount: 0"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/calculator_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:onClick="calculator_clicked"
+                android:src="@drawable/calculator" />
+
+            <TextView
+                android:id="@+id/calculator_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="-5dp"
+                android:layout_weight="1"
+                android:text="Price: 500"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/calculator_amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Amount: 0"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/cell_phone_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:onClick="cell_phone_clicked"
+                android:src="@drawable/cell_phone" />
+
+            <TextView
+                android:id="@+id/cell_phone_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="-5dp"
+                android:layout_weight="1"
+                android:text="Price: 5.000"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/cell_phone_amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Amount: 0"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/smartphone_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:onClick="smartphone_clicked"
+                android:src="@drawable/smartphone" />
+
+            <TextView
+                android:id="@+id/smartphone_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="-5dp"
+                android:layout_weight="1"
+                android:text="Price: 80.000"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/smartphone_amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Amount: 0"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/tablet_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:onClick="tablet_clicked"
+                android:src="@drawable/tablet" />
+
+            <TextView
+                android:id="@+id/tablet_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="-5dp"
+                android:layout_weight="1"
+                android:text="Price: 200.000"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tablet_amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Amount: 0"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/monitor_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:onClick="monitor_clicked"
+                android:src="@drawable/monitor" />
+
+            <TextView
+                android:id="@+id/monitor_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="-5dp"
+                android:layout_weight="1"
+                android:text="Price: 1.100.000"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/monitor_amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Amount: 0"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/television_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:onClick="television_clicked"
+                android:src="@drawable/television" />
+
+            <TextView
+                android:id="@+id/television_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="-5dp"
+                android:layout_weight="1"
+                android:text="Price: 8.000.000"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/television_amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Amount: 0"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/cinema_screen_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:onClick="cinema_screen_clicked"
+                android:src="@drawable/cinema_screen" />
+
+            <TextView
+                android:id="@+id/cinema_screen_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="-5dp"
+                android:layout_weight="1"
+                android:text="Price: 60.000.000"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/cinema_screen_amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Amount: 0"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            
+        <ImageView
+            android:id="@+id/satellite_screen_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:onClick="satellite_screen_clicked"
+            android:src="@drawable/satellite_screen" />
+
+        <TextView
+            android:id="@+id/satellite_screen_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:text="Price: 480.000.000"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/satellite_screen_amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="Amount: 0"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        
+		<ImageView
+            android:id="@+id/moon_screen_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:onClick="moon_screen_clicked"
+            android:src="@drawable/moon_screen" />
+
+        <TextView
+            android:id="@+id/moon_screen_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:text="Price: 2.600.000.000"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/moon_screen_amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="Amount: 0"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        
+        
+		<ImageView
+            android:id="@+id/sun_screen_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:onClick="sun_screen_clicked"
+            android:src="@drawable/sun_screen" />
+
+        <TextView
+            android:id="@+id/sun_screen_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:text="Price: 16.000.000.000"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/sun_screen_amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="Amount: 0"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        
+        
+		<ImageView
+            android:id="@+id/solar_system_screen_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:onClick="solar_system_screen_clicked"
+            android:src="@drawable/solar_system_screen" />
+
+        <TextView
+            android:id="@+id/solar_system_screen_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="-5dp"
+            android:layout_weight="1"
+            android:text="Price: 100.000.000.000"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/solar_system_screen_amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="Amount: 0"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/reset_image"
+            android:layout_width="180dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginTop="-3dp"
+            android:layout_weight="1"
+            android:onClick="reset_clicked"
+            android:src="@drawable/reset" />
+
+        <TextView
+            android:id="@+id/global_multiplier_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="Global Multiplier: 1.00*PpS"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/pixel_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/PpS_amount_text"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="pixel_clicked"
+        android:src="@drawable/pixel" />
+
+    <TextView
+        android:id="@+id/pixels_amount_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pixels_text"
+        android:layout_below="@+id/pixels_text"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pixels_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="PIXELS:"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/PpS_amount_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pixels_amount_text"
+        android:layout_alignRight="@+id/PpS_text"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/PpS_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="PpS:"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/pixel_taped_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/PpS_amount_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="+1"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+</RelativeLayout>
