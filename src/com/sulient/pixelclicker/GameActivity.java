@@ -26,7 +26,7 @@ import java.lang.Math;
 
 
 @SuppressLint("CommitPrefEdits") public class GameActivity extends Activity {
-	//////////DEKLARACJA ZMIENNYCH (ceny, iloœæ itp.: ekranów)//////////   
+	//////////DEKLARACJA ZMIENNYCH (ceny, ilosc itp.: ekranow)//////////
 	double 	pixels;
 	double	PpS;
 	float   global_multiplier;
@@ -101,7 +101,7 @@ import java.lang.Math;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
-        //////////USTAWIENIE APLIKACJI NA PE£NY EKRAN//////////  
+        //////////USTAWIENIE APLIKACJI NA PELNY EKRAN//////////
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         
@@ -264,11 +264,11 @@ import java.lang.Math;
     	   	
     	show_tutorial = game_progress.getBoolean("show_tutorial", true);
  
-        //////////ZA£ADOWANIE ANIMACJI//////////   
+        //////////ZALADOWANIE ANIMACJI//////////
         anim_fade_out = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_out);
         anim_zoom_in = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.zoom_in);
     	
-        new CountDownTimer(315576000, 100) { //////////TIMER dodaj¹cy 1/10 PpS co 1/10 sec. //////////       	
+        new CountDownTimer(315576000, 100) { //////////TIMER dodajï¿½cy 1/10 PpS co 1/10 sec. //////////       	
         	double			PpS_after_multiplers;
             public void onTick(long millisUntilFinished) {      	
             	pixels += (PpS*pps_multipler*global_multiplier)/10;
@@ -312,7 +312,7 @@ import java.lang.Math;
             }
          }.start();           
          
-         new CountDownTimer(315576000, 60000) { //////////TIMER zapisuj¹cy stan gry co 60 sec //////////    
+         new CountDownTimer(315576000, 60000) { //////////TIMER zapisujacy stan gry co 60 sec //////////
              public void onTick(long millisUntilFinished) {
             	 
             	 if (millisUntilFinished < 315566000) {
@@ -409,7 +409,7 @@ import java.lang.Math;
         }       
     }
     
-    //////////AKCJE PO WCIŒNIÊCIU DANEGO PRZYCISKU//////////   
+    //////////AKCJE PO WCISNIECIU DANEGO PRZYCISKU//////////
     public void pixel_clicked(View v){
     	final TextView pixel_taped_text = (TextView) findViewById(R.id.pixel_taped_text);
     	if (tap_multipler < 1000000) 														{pixel_taped_text.setText("+"+tap_multipler);}                
