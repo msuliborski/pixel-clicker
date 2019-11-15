@@ -1,47 +1,35 @@
 # Pixel Clicker
-
-Simple clicker game. <br/>
-
+Simple clicker game
+<br/>
 <p align="center">
-  <img width="280" src="google-play/screenshot_phone_01.png">
-  <img width="280" src="google-play/screenshot_phone_02.png">
-  <img width="280" src="google-play/screenshot_phone_03.png">
+  <img width="280" src="google-play/screenshot_phone_01.png"/>
+  <img width="280" src="google-play/screenshot_phone_02.png"/>
+  <img width="280" src="google-play/screenshot_phone_03.png"/>
 </p>
 
-## Getting Started
+### Download
+All releases of the game are avaliable on the github page in the [releases](https://github.com/msuliborski/pixel-clicker/releases) tab. 
+Game/App is also avaliable in [Google Play](https://play.google.com/store/apps/details?id=com.sulient.pixel-clicker)
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
-
 In order to properly build application one might need to install [Android Studio](https://developer.android.com/studio).
 
 ### Cloning
-
 ```
 $ git clone https://github.com/msuliborski/pixel-clicker
 ```
 
 ### Building
-
-Open project in Android Studio and install all dependencies needed. Currently project is compatible with SDK 29 (Pie).
-
-### Usage
-
-Simply run the game and enjoy :) You can also download it for free from Google Play. [Pixel Clicker](https://play.google.com/store/apps/details?id=com.sulient.pixelclicker).
+Open project in Android Studio and install all dependencies needed. Currently project is compatible with Android 10 (SDK 29).
 
 ## Built with
-
 * [Android Studio](https://developer.android.com/studio) - the fastest tools for building apps on every type of Android device.
 
-
 ## Authors
-
 * **Michał Suliborski** - [msuliborski](https://github.com/msuliborski)
 
 ## License
-
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-
-
