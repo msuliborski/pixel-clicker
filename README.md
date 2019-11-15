@@ -9,7 +9,7 @@ Simple clicker game
 
 ### Download
 All releases of the game are avaliable on the github page in the [releases](https://github.com/msuliborski/pixel-clicker/releases) tab. 
-Game/App is also avaliable in [Google Play](https://play.google.com/store/apps/details?id=com.sulient.pixel-clicker)
+Game/App is also avaliable in [Google Play](https://play.google.com/store/apps/details?id=com.sulient.pixelclicker)
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
