@@ -1,5 +1,6 @@
-# Pixel Clicker
-Simple clicker game
+<h1> <img width="25" src="res/drawable-xxhdpi/ic_launcher.png">Pixel Clicker</h1> 
+
+Simple clicker game written in Java 
 <br/>
 <p align="center">
   <img width="280" src="google-play/screenshot_phone_01.png"/>
